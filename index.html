@@ -10,24 +10,99 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Hello, world!</title>
+    <title>Kristiania</title>
   </head>
   <body>
-    <div class="container-fluid">
-        <h1 class="text-center">Les mer om skolene våre</h1>
-        <div class="row w-50 mt-5">
-          <div class="fjerdingen-box col-md-5">
-              <div class="row py-5">
-                  <div class="col ml-1">
-                      <h1>Fjerdingen</h1>
-                  </div>
-                  <div class="align-self-end mr-2">
-                      <i class="fas fa-clock"></i> Man-Fre 08-24 (10-23)
-                  </div>
+
+    <section class="header-section">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top mt-2">
+            <div class="container-fluid">
+              <img class="navbar-brand" src="img/logo.svg" style="object-fit: contain; height:65px;">
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">VELG DESTINASJON</a>
+                        <div class="dropdown-menu bg-dark-sm">
+                            <a href="#" class="dropdown-item">FJERDINGEN</a>
+                            <a href="#" class="dropdown-item">VULKAN</a>
+                            <a href="#" class="dropdown-item">BRENNERIVEIEN</a>
+                            <a href="#" class="dropdown-item">KVADRATUREN</a>
+                        </div>
+                      </li>
+                  <li class="nav-item">
+                    <a href="#explore-head-section" class="nav-link text-light">KART</a>
+                  </li>
+                </ul>
               </div>
+            </div>
+          </nav>
+          <h1 class="introduction-title text-center text-white">HVORDAN ØNSKER DU Å REISE?</h1>
+          <p class="introduction-subtitle text-white text-center">Velg hvordan du ønsker å komme deg til destinasjonen din nedenfor.</p>
+          <div class="button-container justify-content-center d-flex flex-row row-hl">
+            <div class="button p-4 item-hl align-self-sm-center">
+              <button><i class="fas fa-walking"></i> Spasere</button>
+            </div>
+            <div class="button p-4 item-hl align-self-sm-center">
+                <button><i class="fas fa-subway"></i> Kollektivt</button>
+              </div>
+              <div class="button p-4 item-hl align-self-sm-center">
+                  <button><i class="fas fa-bicycle"></i> Sykle</button>
+                </div>
           </div>
+    </section>
+
+    <section class="event-section">
+      <h1 class="event-title text-center mt-3 mb-4">Hva skjer på skolen i nærmeste fremtid?</h1>
+      
+      <div class="alert alert-info w-75 m-auto">
+          <strong>Hør her!</strong> Denne tabellen oppdateres jevnlig, men kan noen ganger være utdatert.
         </div>
-    </div>
+      
+      <table class="event-table table table-striped w-75 m-auto pl-2 pr-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Beskrivelse</th>
+              <th scope="col">Vert(er)</th>
+              <th scope="col">Tidspunkt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><i class="fas fa-book-open"></i></th>
+              <td>Eksamensforbredelser</td>
+              <td>August Freyvoll</td>
+              <td>12:00 - 15:00</td>
+            </tr>
+            <tr>
+              <th scope="row"><i class="fas fa-beer"></i></th>
+              <td>Skjenkestua</td>
+              <td>Studentforeningen</td>
+              <td>20:00 - 24:00</td>
+            </tr>
+            <tr>
+              <th scope="row"><i class="fas fa-utensils"></i></th>
+              <td>Felles frokost</td>
+              <td>Anders Midtbø</td>
+              <td>08:30 - 10:00</td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-users"></i></th>
+                <td>Seminar</td>
+                <td>Sopra Steria & Bouvet</td>
+                <td>14:00 - 16:00</td>
+              </tr>
+          </tbody>
+        </table>
+    </section>
+
+    <section class="footer-section mt-5">
+      <h3 class="footer-text text-center">Denne nettsideløsningen er utviklet av gruppe X ved Westerdals Teknologi 1.</h3>
+    </section>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

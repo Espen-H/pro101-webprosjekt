@@ -1,0 +1,14 @@
+.footer-section{
+    height:100px;
+    width:100%;
+    background-color:rgb(24, 24, 26);
+}
+
+.footer-section .footer-text{
+    font-size: 14px;
+    color:white;
+    font-family: 'SanFranciscoCompactLight';
+    padding-top:40px;
+    padding-left:30px;
+    padding-right:30px;
+}

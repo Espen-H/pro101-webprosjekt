@@ -1,1 +1,60 @@
 @import './Forside/schools.css';
+@import './Forside/Header/header.css';
+@import './Forside/Events/events.css';
+@import './Universal/footer.css';
+
+@font-face {
+    font-family: 'SanFranciscoRegular';
+    src: url('fonts/SF-Pro-Text-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SanFranciscoLight';
+    src: url('fonts/SF-Pro-Display-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SanFranciscoMedium';
+    src: url('fonts/SF-Pro-Display-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SanFranciscoSemiBold';
+    src: url('fonts/SF-Pro-Display-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SanFranciscoCompactRegular';
+    src: url('fonts/SFCompactText-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SanFranciscoCompactLight';
+    src: url('fonts/SFCompactText-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SanFranciscoCompactMedium';
+    src: url('fonts/SFCompactText-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SanFranciscoCompactSemiBold';
+    src: url('fonts/SFCompactText-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
