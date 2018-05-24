@@ -1,0 +1,9 @@
+.container-fluid .row .fjerdingen-box{
+    background-color:blue;
+    background-image: url('../../img/fjerdingen.jpg');
+    object-fit: contain;
+}
+
+.container-fluid .row .fjerdingen-box h1{
+    
+}
