@@ -4,6 +4,17 @@
     object-fit: contain;
 }
 
-.container-fluid .row .fjerdingen-box h1{
-    
+.container-fluid .row .fjerdingen-box .row .col .school-title{
+    color:white;
+    text-transform: uppercase;
+    font-size:26px;
+}
+
+.container-fluid .row .fjerdingen-box .row .col .school-location{
+    font-size:26px;
+}
+
+.container-fluid .row .fjerdingen-box .row{
+    padding-top:80px !important;
+    padding-bottom:80px !important;
 }
