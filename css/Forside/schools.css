@@ -2,11 +2,17 @@
   margin: 20px 0;
 }
 .campus-section .campus-title {
-  font-size:24px;
+  font-size:26px;
   text-transform: uppercase;
   font-family: 'SanFranciscoCompactRegular';
   padding-left:70px;
   padding-right:70px;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.campus-section .container .row .school-box-fjerdingen, .school-box-brenneriveien, .school-box-kvadraturen, .school-box-vulkan{
+    cursor: pointer;
 }
 
 .campus-section .container .row .school-box-fjerdingen .background{
@@ -14,9 +20,9 @@
     padding:0;
     margin: 0;
     background-size:cover;
-    background-position-y: -80px;
+    background-position-y: 0px;
     background-repeat: no-repeat;
-    height:200px;
+    min-height:200px !important;
     margin-top:0px;
 }
 
@@ -34,6 +40,102 @@
 }
 
 .campus-section .container .row .school-box-fjerdingen .school-opening{
+    text-transform: uppercase;
+    font-family: 'SanFranciscoCompactRegular';
+    font-size:12px;
+}
+
+/*------------*/
+
+.campus-section .container .row .school-box-vulkan .background{
+    background-image: url(../../img/vulkanBlack.png);
+    padding:0;
+    margin: 0;
+    background-size:cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    min-height:200px !important;
+    margin-top:0px;
+}
+
+.campus-section .container .row .school-box-vulkan .school-title{
+    font-family: 'SanFranciscoCompactSemiBold';
+    font-size:28px;
+    padding-top:45px;
+}
+
+
+.campus-section .container .row .school-box-vulkan .school-location{
+    font-family: 'SanFranciscoCompactLight';
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.campus-section .container .row .school-box-vulkan .school-opening{
+    text-transform: uppercase;
+    font-family: 'SanFranciscoCompactRegular';
+    font-size:12px;
+}
+
+/*------------*/
+
+.campus-section .container .row .school-box-brenneriveien .background{
+    background-image: url(../../img/brenneriveienBlack.png);
+    padding:0;
+    margin: 0;
+    background-size:cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    min-height:200px !important;
+    margin-top:0px;
+}
+
+.campus-section .container .row .school-box-brenneriveien .school-title{
+    font-family: 'SanFranciscoCompactSemiBold';
+    font-size:28px;
+    padding-top:45px;
+}
+
+
+.campus-section .container .row .school-box-brenneriveien .school-location{
+    font-family: 'SanFranciscoCompactLight';
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.campus-section .container .row .school-box-brenneriveien .school-opening{
+    text-transform: uppercase;
+    font-family: 'SanFranciscoCompactRegular';
+    font-size:12px;
+}
+
+/*------------*/
+
+.campus-section .container .row .school-box-kvadraturen .background{
+    background-image: url(../../img/kvadraturenBlack.png);
+    padding:0;
+    margin: 0;
+    background-size:cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    min-height:200px !important;
+    margin-top:0px;
+}
+
+.campus-section .container .row .school-box-kvadraturen .school-title{
+    font-family: 'SanFranciscoCompactSemiBold';
+    font-size:28px;
+    padding-top:45px;
+}
+
+
+.campus-section .container .row .school-box-kvadraturen .school-location{
+    font-family: 'SanFranciscoCompactLight';
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.campus-section .container .row .school-box-kvadraturen .school-opening{
     text-transform: uppercase;
     font-family: 'SanFranciscoCompactRegular';
     font-size:12px;
