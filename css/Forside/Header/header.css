@@ -1,0 +1,62 @@
+
+.header-section{
+    background-image: url(../../../img/page-header.png);
+    padding:0;
+    margin: 0;
+    background-size:cover;
+    height:400px;
+    margin-top:0px;
+}
+
+.header-section .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link{
+    font-family: 'SanFranciscoCompactSemiBold';
+    font-size:18px;
+}
+
+.header-section .navbar .container-fluid .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+    font-family: 'SanFranciscoCompactRegular';
+}
+
+.header-section .introduction-title{
+    padding-top:50px;
+    font-family: 'SanFranciscoCompactRegular';
+    font-size:30px;
+    /*Gjør så det ser bedre ut på mobile enheter og nettbrett, med litt space på siden.*/
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.header-section .introduction-subtitle{
+    margin-top:20px;
+    /*Gjør så det ser bedre ut på mobile enheter og nettbrett, med litt space på siden.*/
+    padding-left:55px;
+    padding-right:55px;
+}
+
+.header-section .button-container{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.header-section .button-container button{
+    border:none;
+    border-style: solid;
+    background-color:transparent;
+    display:inline-block;
+    border-width: 2px;
+    border-color:white;
+    color:white;
+    text-decoration: none;
+    width:150px;
+    height:40px;
+
+}
+
+.header-section .button-container button:hover{
+    background-color:white;
+    color:black;
+    cursor: pointer;
+
+}
+
+
