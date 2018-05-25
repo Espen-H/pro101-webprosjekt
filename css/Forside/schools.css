@@ -1,30 +1,40 @@
-.container-fluid .row .fjerdingen-box{
-    background-color:blue;
-    background-image: url('../../img/fjerdingen.jpg');
-    object-fit: contain;
-}
-
-.container-fluid .row .fjerdingen-box .row .col .school-title{
-    color:white;
-    text-transform: uppercase;
-    font-size:26px;
-}
-
-.container-fluid .row .fjerdingen-box .row .col .school-location{
-    font-size:26px;
-}
-
-.container-fluid .row .fjerdingen-box .row{
-    padding-top:80px !important;
-    padding-bottom:80px !important;
-}
 .campus-section {
   margin: 20px 0;
 }
-.campus-title {
+.campus-section .campus-title {
   font-size:24px;
   text-transform: uppercase;
   font-family: 'SanFranciscoCompactRegular';
   padding-left:70px;
   padding-right:70px;
+}
+
+.campus-section .container .row .school-box-fjerdingen .background{
+    background-image: url(../../img/fjerdingenBlack.png);
+    padding:0;
+    margin: 0;
+    background-size:cover;
+    background-position-y: -80px;
+    background-repeat: no-repeat;
+    height:200px;
+    margin-top:0px;
+}
+
+.campus-section .container .row .school-box-fjerdingen .school-title{
+    font-family: 'SanFranciscoCompactSemiBold';
+    font-size:28px;
+    padding-top:45px;
+}
+
+
+.campus-section .container .row .school-box-fjerdingen .school-location{
+    font-family: 'SanFranciscoCompactLight';
+    font-size:20px;
+    text-transform: uppercase;
+}
+
+.campus-section .container .row .school-box-fjerdingen .school-opening{
+    text-transform: uppercase;
+    font-family: 'SanFranciscoCompactRegular';
+    font-size:12px;
 }
