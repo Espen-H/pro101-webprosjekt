@@ -11,6 +11,10 @@
   padding-bottom:30px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .campus-section .container .row .school-box-fjerdingen, .school-box-brenneriveien, .school-box-kvadraturen, .school-box-vulkan{
     cursor: pointer;
 }

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Kristiania</title>
+  </head>
+  <body>
+
+    <section class="header-section">
+        <nav class="navbar navbar-expand-sm navbar-dark pt-4">
+            <div class="container-fluid">
+              <a href="index.html">
+                <img class="navbar-brand" src="img/logo.svg" style="object-fit: contain; height:65px;">
+              </a>
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">VELG DESTINASJON</a>
+                        <div class="dropdown-menu bg-dark-sm">
+                            <a href="#" class="dropdown-item">FJERDINGEN</a>
+                            <a href="#" class="dropdown-item">VULKAN</a>
+                            <a href="#" class="dropdown-item">BRENNERIVEIEN</a>
+                            <a href="#" class="dropdown-item">KVADRATUREN</a>
+                        </div>
+                      </li>
+                  <li class="nav-item">
+                    <a href="#explore-head-section" class="nav-link text-light">KART</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <h1 class="introduction-title text-center text-white">VULKAN</h1>
+          <p class="introduction-subtitle text-white text-center">Velg hvordan du ønsker å komme deg til Vulkan nedenfor.</p>
+          <div class="button-container justify-content-center d-flex flex-row row-hl">
+            <div class="button p-4 item-hl align-self-sm-center">
+              <button><i class="fas fa-walking"></i> Spasere</button>
+            </div>
+            <div class="button p-4 item-hl align-self-sm-center">
+                <button><i class="fas fa-subway"></i> Kollektivt</button>
+              </div>
+              <div class="button p-4 item-hl align-self-sm-center">
+                  <button><i class="fas fa-bicycle"></i> Sykle</button>
+                </div>
+          </div>
+    </section>
+
+    <section class="about-section">
+      <h1 class="title">Om</h1>
+      <div class="body">
+        <p>
+          Campus Vulkan holder til sentralt langs Akerselva.
+          Det ligger bare et steinkast fra idylliske Grünerløkka med
+          nydelige parker og lunsjbarer. Selveste mathallen ligger
+          i nabobygget, så studenter alltid har mye og spennende mat
+          i nærheten. Hvis man trenger litt inspirasjon så trenger
+          en ikke gå langt når man holder til på Vulkan.
+        </p>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <h1 class="title">På campus</h1>
+      <div class="body">
+        <p>
+          Vulkan har gjennomgått en stor oppgradering og har mange spennende nyheter.
+          Studenter på Skuespill, film, tv og spill har gleden av en rekke nye
+          spesialrom: fotostudio og workshop med grønn, hvit og svart bakgrunn
+          for effektopptak, utstyrslager, og mingleområder. I tillegg har
+          kuespillerutdanningen fått en egen fløy med blackbox i fjerde etasje.
+        </p>
+      </div>
+    </section>
+
+    <section class="nearby-section">
+      <h1 class="title text-center mt-3 mb-4">I nærheten</h1>
+      <div class="filters row">
+        <div class="filter">
+          <input type="checkbox" checked value="test" />Kafeér
+        </div>
+        <div class="filter">
+          <input type="checkbox" checked value="test" />Utesteder
+        </div>
+        <div class="filter">
+          <input type="checkbox" checked value="test" />Aktiviteter
+        </div>
+      </div>
+      <div id="map"></div>
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 59.916212, lng: 10.760194},
+            zoom: 15
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3RzDJcXBLTXquPwSt1gJ928S5fX65sLw&callback=initMap" async defer></script>
+    </section>
+
+
+    <section class="footer-section mt-5">
+      <h3 class="footer-text text-center"><span></span>Denne nettsideløsningen er utviklet av gruppe X ved Westerdals Teknologi 1.</h3>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <script>
+      var myNav = document.getElementById('mynav');
+        window.onscroll = function () {
+          "use strict";
+        if (document.body.scrollTop >= 200 ) {
+          myNav.classList.add("nav-colored");
+          myNav.classList.remove("nav-transparent");
+        }
+        else {
+          myNav.classList.add("nav-transparent");
+          myNav.classList.remove("nav-colored");
+        }
+};
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
