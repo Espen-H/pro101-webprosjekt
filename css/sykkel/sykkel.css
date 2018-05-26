@@ -1,0 +1,12 @@
+.Bysykkel-bilde {
+  height: 600px;
+  background-size: cover;
+}
+.thumbnail{
+height: 300px;
+width: 300px;
+}
+#SykkelHeader{
+  background-image: url(../../img/OsloBysykkel.jpg);
+  height: 150px;
+}
