@@ -1,0 +1,65 @@
+.information-section .btn-toolbar{
+    margin-top:40px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    padding-top:20px;
+    font-family: 'SanFranciscoCompactRegular';
+    border-color:red !important;
+}
+
+.information-section .btn-toolbar .btn-group {
+    border-color: red !important;
+}
+
+.information-section .btn-toolbar .btn-group button{
+    background-color:rgb(240, 240, 240) !important;
+    color:rgb(141, 141, 141);
+    font-size:18px;
+    text-transform: uppercase;
+    /*border-color:rgb(207, 207, 207) !important;*/
+    border:none;
+}
+
+.information-section .btn-toolbar .btn-group .btn.active{
+    color:rgb(75, 75, 75) !important;
+}
+
+.information-section .btn-toolbar .btn-group .btn.active:focus{
+    color:rgb(75, 75, 75) !important;
+}
+
+.information-section .btn-toolbar .btn-group .btn.active:hover{
+    color:rgb(75, 75, 75) !important;
+}
+
+.information-section .btn-toolbar .btn-group .btn.active:active{
+    color:rgb(75, 75, 75) !important;
+}
+
+.information-section .btn-toolbar .btn-group button>.content{
+    padding:10px !important;
+    font-size:18px;
+}
+
+.information-section .display-container{
+    margin-top:50px !important;
+    padding-bottom:60px !important;
+}
+
+.information-section .display-container .collapse-information .card h1{
+    font-family: 'SanFranciscoCompactRegular';
+    font-size:30px;
+    padding-bottom:15px;
+}
+
+.information-section .display-container .collapse-campus .card h1{
+    font-family: 'SanFranciscoCompactRegular';
+    font-size:30px;
+    padding-bottom:15px;
+}
+
+.information-section .display-container .collapse-nearby .card h1{
+    font-family: 'SanFranciscoCompactRegular';
+    font-size:30px;
+    padding-bottom:15px;
+}

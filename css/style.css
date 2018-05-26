@@ -3,6 +3,10 @@
 @import './skoler/universal.css';
 @import './Forside/Events/events.css';
 @import './Universal/footer.css';
+@import './Universal/header.css';
+@import './skoler-ny/header.css';
+@import './skoler-ny/presentation-picture.css';
+@import './skoler-ny/information.css';
 
 @font-face {
     font-family: 'SanFranciscoRegular';
