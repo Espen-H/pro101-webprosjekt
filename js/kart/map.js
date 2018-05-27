@@ -38,3 +38,20 @@ function getTravelMode() {
     return "TRANSIT";
   }
 }
+
+function gup( name, url ) {
+    if (!url) url = location.href;
+    name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+    var regexS = "[\\?&]"+name+"=([^&#]*)";
+    var regex = new RegExp( regexS );
+    var results = regex.exec( url );
+    return results == null ? null : results[1];
+}
+  let mode = gup("mode", window.location.href);
+  console.log(mode);
+  if (mode === "transit") {
+    $('#transitMode').button('toggle');
+  }
+  else if(mode === "bike") {
+    $('#bikeMode').button('toggle');
+  }

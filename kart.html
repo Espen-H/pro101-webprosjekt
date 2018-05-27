@@ -67,13 +67,13 @@
       </div>
         <div>
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active">
+            <label id="walkMode" class="btn btn-secondary active">
               <input type="radio" name="options" id="radioWalk" autocomplete="off" checked> Gå
             </label>
-            <label class="btn btn-secondary">
+            <label id="transitMode" class="btn btn-secondary">
               <input type="radio" name="options" id="radioTransit" autocomplete="off"> Kollektivt
             </label>
-            <label class="btn btn-secondary">
+            <label id="bikeMode" class="btn btn-secondary">
               <input type="radio" name="options" id="radioBike" autocomplete="off"> Sykle
             </label>
           </div>
@@ -86,11 +86,11 @@
         <h3 class="footer-text text-center"><span></span>Denne nettsideløsningen er utviklet av gruppe X ved Westerdals Teknologi 1.</h3>
     </section>
     <script src="js/kart/styles.js"></script>
-    <script src="js/kart/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3RzDJcXBLTXquPwSt1gJ928S5fX65sLw&callback=initMap"
     async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/kart/map.js"></script>
   </body>
 </html>
