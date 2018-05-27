@@ -1,0 +1,8 @@
+.map-body .filters {
+  padding: 10px;
+  background: #18181a;
+}
+
+.map-body .filters .d-flex .btn-group .active {
+  background-color: #17a2b8;
+}
