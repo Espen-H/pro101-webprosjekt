@@ -50,7 +50,7 @@
             </div>
           </div>
         </nav>
-    <div style="padding: 10px;background: #18181a;">
+    <div class="filters">
       <div class="d-flex">
         <div class="dropdown mr-1">
           <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
@@ -72,20 +72,33 @@
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
-        <button type="button" class="btn btn-success">Naviger</button>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked> Gå
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off"> Kollektivt
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> Sykle
+          </label>
+        </div>
+        <button type="button" class="btn btn-success ml-3">Naviger</button>
       </div>
     </div>
-    <div id="map" style="height: calc(100vh - 313px)"></div>
+    <div id="map" style="height: calc(100vh - 271px)"></div>
 
     <section class="footer-section mt-0">
         <h3 class="footer-text text-center"><span></span>Denne nettsideløsningen er utviklet av gruppe X ved Westerdals Teknologi 1.</h3>
-      </section>
+    </section>
+    <script src="js/kart/styles.js"></script>
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 59.917933, lng: 10.750229},
-          zoom: 15
+          zoom: 15,
+          styles: style
         });
       }
     </script>
