@@ -51,40 +51,34 @@
           </div>
         </nav>
     <div class="filters">
-      <div class="d-flex">
-        <div class="dropdown mr-1">
-          <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-            Fra
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-        <div class="dropdown mr-1">
-          <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-            Til
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-secondary active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked> Gå
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option2" autocomplete="off"> Kollektivt
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> Sykle
-          </label>
-        </div>
-        <button type="button" class="btn btn-success ml-3">Naviger</button>
+      <div class="d-flex" style="margin-bottom: 10px;">
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Fjerdingen</option>
+          <option>Vulkan</option>
+          <option>Kvadraturen</option>
+          <option>Brenneriveien</option>
+        </select>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Fjerdingen</option>
+          <option>Vulkan</option>
+          <option>Kvadraturen</option>
+          <option>Brenneriveien</option>
+        </select>
       </div>
+        <div>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Gå
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Kollektivt
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Sykle
+            </label>
+          </div>
+          <button type="button" class="btn btn-success ml-3 nav-btn">Naviger</button>
+        </div>
     </div>
     <div id="map" style="height: calc(100vh - 271px)"></div>
 

@@ -3,6 +3,19 @@
   background: #18181a;
 }
 
-.map-body .filters .d-flex .btn-group .active {
+.map-body .filters .btn-group .active {
   background-color: #17a2b8;
+}
+.map-body .filters .form-control {
+  max-width: 300px;
+}
+@media screen and (min-width: 630px) {
+  .map-body .filters {
+    display: flex;
+  }
+}
+@media screen and (max-width: 630px) {
+  .nav-btn {
+    float: right;
+  }
 }
