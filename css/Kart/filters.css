@@ -13,6 +13,9 @@
   .map-body .filters {
     display: flex;
   }
+  .map-body .filters .d-flex .form-control {
+    margin: 0 5px;
+  }
 }
 @media screen and (max-width: 630px) {
   .nav-btn {

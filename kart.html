@@ -52,32 +52,32 @@
         </nav>
     <div class="filters">
       <div class="d-flex" style="margin-bottom: 10px;">
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>Fjerdingen</option>
-          <option>Vulkan</option>
-          <option>Kvadraturen</option>
-          <option>Brenneriveien</option>
+        <select class="form-control" id="start">
+          <option value="Christian Kroghs Gate 32, Oslo">Fjerdingen</option>
+          <option value="Vulkan 19, Oslo">Vulkan</option>
+          <option value="Brenneriveien 9, Oslo">Brenneriveien</option>
+          <option value="Prinsens Gate 7, Oslo">Kvadraturen</option>
         </select>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>Fjerdingen</option>
-          <option>Vulkan</option>
-          <option>Kvadraturen</option>
-          <option>Brenneriveien</option>
+        <select class="form-control" id="end">
+          <option value="Christian Kroghs Gate 32, Oslo">Fjerdingen</option>
+          <option value="Vulkan 19, Oslo">Vulkan</option>
+          <option value="Brenneriveien 9, Oslo">Brenneriveien</option>
+          <option value="Prinsens Gate 7, Oslo">Kvadraturen</option>
         </select>
       </div>
         <div>
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-secondary active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked> Gå
+              <input type="radio" name="options" id="radioWalk" autocomplete="off" checked> Gå
             </label>
             <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Kollektivt
+              <input type="radio" name="options" id="radioTransit" autocomplete="off"> Kollektivt
             </label>
             <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option3" autocomplete="off"> Sykle
+              <input type="radio" name="options" id="radioBike" autocomplete="off"> Sykle
             </label>
           </div>
-          <button type="button" class="btn btn-success ml-3 nav-btn">Naviger</button>
+          <button type="button" onclick="calculateAndDisplayRoute(directionsService, directionsDisplay)" class="btn btn-success ml-3 nav-btn">Naviger</button>
         </div>
     </div>
     <div id="map" style="height: calc(100vh - 271px)"></div>
@@ -86,16 +86,7 @@
         <h3 class="footer-text text-center"><span></span>Denne nettsideløsningen er utviklet av gruppe X ved Westerdals Teknologi 1.</h3>
     </section>
     <script src="js/kart/styles.js"></script>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 59.917933, lng: 10.750229},
-          zoom: 15,
-          styles: style
-        });
-      }
-    </script>
+    <script src="js/kart/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3RzDJcXBLTXquPwSt1gJ928S5fX65sLw&callback=initMap"
     async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
