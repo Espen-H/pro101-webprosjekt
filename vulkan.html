@@ -10,127 +10,129 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Kristiania</title>
+    <title>Kristiania - Fjerdingen</title>
   </head>
   <body>
 
-    <section class="header-section">
-        <nav class="navbar navbar-expand-sm navbar-dark pt-4">
-            <div class="container-fluid">
-              <a href="index.html">
-                <img class="navbar-brand" src="img/logo.svg" style="object-fit: contain; height:65px;">
-              </a>
-              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">VELG DESTINASJON</a>
-                        <div class="dropdown-menu bg-dark-sm">
-                            <a href="#" class="dropdown-item">FJERDINGEN</a>
-                            <a href="#" class="dropdown-item">VULKAN</a>
-                            <a href="#" class="dropdown-item">BRENNERIVEIEN</a>
-                            <a href="#" class="dropdown-item">KVADRATUREN</a>
-                        </div>
-                      </li>
-                  <li class="nav-item">
-                    <a href="#explore-head-section" class="nav-link text-light">KART</a>
-                  </li>
-                </ul>
+    <section class="navigation-section">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-4">
+                    <div class="container-fluid">
+                      <a href="index.html"><img class="navbar-brand" src="img/logo.svg" style="object-fit: contain; height:65px;"></a>
+                      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">VELG DESTINASJON</a>
+                                <div class="dropdown-menu bg-dark-sm">
+                                    <a href="#" class="dropdown-item">FJERDINGEN</a>
+                                    <a href="vulkan.html" class="dropdown-item">VULKAN</a>
+                                    <a href="#" class="dropdown-item">BRENNERIVEIEN</a>
+                                    <a href="#" class="dropdown-item">KVADRATUREN</a>
+                                </div>
+                              </li>
+                          <li class="nav-item">
+                            <a href="#explore-head-section" class="nav-link text-light">KART</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+    </section>
+    <section class="presentation-picture-vulkan">
+      <h1 class="school-icon text-center text-white"><i class="fas fa-school"></i></h1>
+      <h1 class="introduction-title text-white text-center">Velkommen til Vulkan</h1>
+      <p class="description-label text-white text-center text-uppercase">Skuespill • Film, TV og Spill</p>
+    </section>
+
+    <section class="information-section">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group btn-group-lg m-auto mt-5" role="group" aria-label="First group">
+              <button type="button" class="btn active btn-secondary" data-toggle="collapse" data-target="#collapseInformation" aria-expanded="false" aria-controls="collapseInformation"><span class="content">Informasjon</span></button>
+              <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#collapseCampus" aria-expanded="false" aria-controls="collapseCampus"><span class="content">På campus</span></button>
+              <button type="button" class="btn btn-secondary" data-toggle="collapse" href="#collapseNearby" role="button" aria-expanded="false" aria-controls="collapseNearby"><span class="content">Nærområde</span></button>
+            </div>
+          </div>
+
+
+
+<div class="display-container">
+<div id="accordion" role="tablist">
+          <div class="collapse-information collapse show w-75 m-auto" role="tab" id="collapseInformation" data-parent="#accordion">
+              <div class="card card-body">
+                <h1 class="info-title text-center">CAMPUS VULKAN</h1>
+                  Campus Vulkan holder til sentralt langs Akerselva. Det ligger bare et steinkast fra idylliske Grünerløkka med nydelige parker og lunsjbarer. Selveste mathallen ligger i nabobygget så studenter alltid har mye og spennende mat i nærheten. Hvis man trenger litt inspirasjon så trenger en ikke gå langt når man holder til på Vulkan.</div>
+          </div>
+
+          <div class="collapse-campus collapse w-75 m-auto" role="tab" id="collapseCampus" data-parent="#accordion">
+              <div class="card card-body">
+                <h1 class="info-title text-center">HVA SKJER HER?</h1>
+
+                <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="card">
+                      <img class="card-img-top" src="img/blackbox.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Blackbox</h5>
+                        <p class="card-text">skuespillerutdanningen har glede av ny blackbox i fjerde etasje.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="card">
+                      <img class="card-img-top" src="img/vulkan_kantine.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Kantine</h5>
+                        <p class="card-text">Vulkan har flere mingleområder der studenter kan møtes og slappe av.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
             </div>
-          </nav>
-          <h1 class="introduction-title text-center text-white">VULKAN</h1>
-          <p class="introduction-subtitle text-white text-center">Velg hvordan du ønsker å komme deg til Vulkan nedenfor.</p>
-          <div class="button-container justify-content-center d-flex flex-row row-hl">
-            <div class="button p-4 item-hl align-self-sm-center">
-              <button><i class="fas fa-walking"></i> Spasere</button>
-            </div>
-            <div class="button p-4 item-hl align-self-sm-center">
-                <button><i class="fas fa-subway"></i> Kollektivt</button>
-              </div>
-              <div class="button p-4 item-hl align-self-sm-center">
-                  <button><i class="fas fa-bicycle"></i> Sykle</button>
+          </div>
+
+          <div class="collapse-nearby collapse w-75 m-auto" role="tab" id="collapseNearby" data-parent="#accordion">
+              <div class="card card-body">
+                  <h1 class="info-title text-center">HVA FINNER JEG I NÆROMRÅDE?</h1>
+                  <div id="map"></div>
                 </div>
           </div>
-    </section>
 
-    <section class="about-section">
-      <h1 class="title">Om</h1>
-      <div class="body">
-        <p>
-          Campus Vulkan holder til sentralt langs Akerselva.
-          Det ligger bare et steinkast fra idylliske Grünerløkka med
-          nydelige parker og lunsjbarer. Selveste mathallen ligger
-          i nabobygget, så studenter alltid har mye og spennende mat
-          i nærheten. Hvis man trenger litt inspirasjon så trenger
-          en ikke gå langt når man holder til på Vulkan.
-        </p>
-      </div>
-    </section>
-
-    <section class="features-section">
-      <h1 class="title">På campus</h1>
-      <div class="body">
-        <p>
-          Vulkan har gjennomgått en stor oppgradering og har mange spennende nyheter.
-          Studenter på Skuespill, film, tv og spill har gleden av en rekke nye
-          spesialrom: fotostudio og workshop med grønn, hvit og svart bakgrunn
-          for effektopptak, utstyrslager, og mingleområder. I tillegg har
-          kuespillerutdanningen fått en egen fløy med blackbox i fjerde etasje.
-        </p>
-      </div>
-    </section>
-
-    <section class="nearby-section">
-      <h1 class="title text-center mt-3 mb-4">I nærheten</h1>
-      <div class="filters row">
-        <div class="filter">
-          <input type="checkbox" checked value="test" />Kafeér
+          </div>
         </div>
-        <div class="filter">
-          <input type="checkbox" checked value="test" />Utesteder
+
         </div>
-        <div class="filter">
-          <input type="checkbox" checked value="test" />Aktiviteter
-        </div>
-      </div>
-      <div id="map"></div>
-      <script>
-        var map;
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 59.916212, lng: 10.760194},
-            zoom: 15
-          });
-        }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3RzDJcXBLTXquPwSt1gJ928S5fX65sLw&callback=initMap" async defer></script>
+
     </section>
 
 
-    <section class="footer-section mt-5">
+
+    <section class="footer-section">
       <h3 class="footer-text text-center"><span></span>Denne nettsideløsningen er utviklet av gruppe X ved Westerdals Teknologi 1.</h3>
     </section>
 
 
     <!-- Optional JavaScript -->
     <script>
-      var myNav = document.getElementById('mynav');
-        window.onscroll = function () {
-          "use strict";
-        if (document.body.scrollTop >= 200 ) {
-          myNav.classList.add("nav-colored");
-          myNav.classList.remove("nav-transparent");
-        }
-        else {
-          myNav.classList.add("nav-transparent");
-          myNav.classList.remove("nav-colored");
-        }
-};
+       var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 59.917933, lng: 10.750229},
+          zoom: 15
+        });
+      };
+
+var $myGroup = $('#myGroup');
+$myGroup.on('show.bs.collapse','.collapse', function() {
+    $myGroup.find('.collapse.in').collapse('hide');
+});
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3RzDJcXBLTXquPwSt1gJ928S5fX65sLw&callback=initMap" async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

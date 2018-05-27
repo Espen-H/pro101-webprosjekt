@@ -18,3 +18,24 @@
     font-family: 'SanFranciscoCompactSemiBold';
     font-size:30px;
 }
+
+.presentation-picture-vulkan{
+    background-image: url(../../img/fjerdingenBlack.png);
+    padding:0;
+    margin: 0;
+    background-size:cover;
+    height:400px;
+    margin-top:0px;
+}
+
+.presentation-picture-vulkan .school-icon{
+    padding-top:120px;
+    font-size:50px;
+}
+
+.presentation-picture-vulkan .introduction-title{
+    text-transform: uppercase;
+    padding-top:20px;
+    font-family: 'SanFranciscoCompactSemiBold';
+    font-size:30px;
+}
