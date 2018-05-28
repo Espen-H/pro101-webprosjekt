@@ -8,6 +8,7 @@
 @import './skoler-ny/header.css';
 @import './skoler-ny/presentation-picture.css';
 @import './skoler-ny/information.css';
+@import './About/about.css';
 
 @font-face {
     font-family: 'SanFranciscoRegular';
