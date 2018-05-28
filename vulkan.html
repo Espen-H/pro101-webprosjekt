@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Kristiania - Fjerdingen</title>
+    <title>Kristiania - Vulkan</title>
   </head>
   <body>
 
@@ -132,6 +132,8 @@
         var fjerdingenPointer = {lat: 59.9161627, lng: 10.7591278};
         var brenneriveienPointer = {lat: 59.9202059, lng: 10.7524563};
         var kvadraturenPointer = {lat: 59.9110907, lng: 10.7445634};
+        var mathallenPointer = {lat: 59.9222197, lng: 10.7514988};
+        var doegnvillPointer = {lat: 59.921708, lng: 10.751671};
 
         // Create a marker and set its position.
         var marker = new google.maps.Marker({
@@ -157,6 +159,19 @@
           position: kvadraturenPointer,
           title: 'Campus Kvadraturen'
         });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: mathallenPointer,
+          title: 'Mathallen'
+        });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: doegnvillPointer,
+          title: 'Døgnvill Burger'
+        });
+
       };
 
 var $myGroup = $('#myGroup');
