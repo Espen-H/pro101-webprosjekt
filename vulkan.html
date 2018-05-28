@@ -44,7 +44,7 @@
       <h1 class="school-icon text-center text-white"><i class="fas fa-school"></i></h1>
       <h1 class="introduction-title text-white text-center">Velkommen til Vulkan</h1>
       <p class="description-label text-white text-center text-uppercase">Skuespill • Film, TV og Spill</p>
-      <div class="col-md-12 text-center"> 
+      <div class="col-md-12 text-center">
         <a href="kart.html"><button class="location-button btn btn-danger self-align-center" style="padding-left:40px;padding-right:40px;padding-top:10px;padding-bottom:10px;"><i class="fas fa-location-arrow"></i> FINN VEIEN HIT</button></a>
     </div>
     </section>
@@ -124,8 +124,38 @@
        var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 59.917933, lng: 10.750229},
-          zoom: 15
+          center: {lat: 59.923356, lng: 10.752187},
+          zoom: 16,
+          styles: style
+        });
+        var vulkanPointer = {lat: 59.923356, lng: 10.752187};
+        var fjerdingenPointer = {lat: 59.9161627, lng: 10.7591278};
+        var brenneriveienPointer = {lat: 59.9202059, lng: 10.7524563};
+        var kvadraturenPointer = {lat: 59.9110907, lng: 10.7445634};
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: vulkanPointer,
+          title: 'Campus Vulkan'
+        });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: fjerdingenPointer,
+          title: 'Campus Fjerdingen'
+        });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: brenneriveienPointer,
+          title: 'Campus Brenneriveien'
+        });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: kvadraturenPointer,
+          title: 'Campus Kvadraturen'
         });
       };
 
@@ -139,5 +169,6 @@ $myGroup.on('show.bs.collapse','.collapse', function() {
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/kart/styles.js"></script>
   </body>
 </html>
