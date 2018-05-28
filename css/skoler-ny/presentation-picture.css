@@ -8,7 +8,7 @@
 }
 
 .presentation-picture .school-icon{
-    padding-top:120px;
+    padding-top:90px;
     font-size:50px;
 }
 
@@ -17,6 +17,10 @@
     padding-top:20px;
     font-family: 'SanFranciscoCompactSemiBold';
     font-size:30px;
+}
+
+.presentation-picture .description-label{
+    padding-bottom:10px;
 }
 
 .presentation-picture-vulkan{
@@ -29,7 +33,7 @@
 }
 
 .presentation-picture-vulkan .school-icon{
-    padding-top:120px;
+    padding-top:90px;
     font-size:50px;
 }
 
@@ -39,6 +43,11 @@
     font-family: 'SanFranciscoCompactSemiBold';
     font-size:30px;
 }
+
+.presentation-picture-vulkan .description-label{
+    padding-bottom:10px;
+}
+
 .presentation-picture-brenneriveien{
     background-image: url(../../img/brenneriveienBlack.png);
     padding:0;
@@ -49,7 +58,7 @@
 }
 
 .presentation-picture-brenneriveien .school-icon{
-    padding-top:120px;
+    padding-top:90px;
     font-size:50px;
 }
 
@@ -58,6 +67,10 @@
     padding-top:20px;
     font-family: 'SanFranciscoCompactSemiBold';
     font-size:30px;
+}
+
+.presentation-picture-brenneriveien .description-label{
+    padding-bottom:10px;
 }
 
 .presentation-picture-kvadraturen{
@@ -70,7 +83,7 @@
 }
 
 .presentation-picture-kvadraturen .school-icon{
-    padding-top:120px;
+    padding-top:90px;
     font-size:50px;
 }
 
@@ -79,5 +92,9 @@
     padding-top:20px;
     font-family: 'SanFranciscoCompactSemiBold';
     font-size:30px;
+}
+
+.presentation-picture-kvadraturen .description-label{
+    padding-bottom:10px;
 }
 
