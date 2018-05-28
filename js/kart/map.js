@@ -29,7 +29,7 @@ function initMap() {
   });
   var markerIcon = {
     url: 'img/campus-marker.png',
-    scaledSize: new google.maps.Size(80, 80),
+    scaledSize: new google.maps.Size(40, 40),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(32, 65)
   };
@@ -39,7 +39,7 @@ function initMap() {
     position: kvadraturenLoc,
     icon: markerIcon,
     labelContent: 'Kvadraturen',
-    labelAnchor: new google.maps.Point(50, 12),
+    labelAnchor: new google.maps.Point(50, 30),
     labelClass: "map-label", // your desired CSS class
     labelInBackground: true
   });
@@ -49,7 +49,7 @@ function initMap() {
     position: brenneriveienLoc,
     icon: markerIcon,
     labelContent: 'Brenneriveien',
-    labelAnchor: new google.maps.Point(55, 12),
+    labelAnchor: new google.maps.Point(55, 30),
     labelClass: "map-label", // your desired CSS class
     labelInBackground: true
   });
@@ -59,7 +59,7 @@ function initMap() {
     position: vulkanLoc,
     icon: markerIcon,
     labelContent: 'Vulkan',
-    labelAnchor: new google.maps.Point(25, 12),
+    labelAnchor: new google.maps.Point(35, 30),
     labelClass: "map-label", // your desired CSS class
     labelInBackground: true
   });
@@ -69,7 +69,7 @@ function initMap() {
     position: fjerdingenLoc,
     icon: markerIcon,
     labelContent: 'Fjerdingen',
-    labelAnchor: new google.maps.Point(40, 12),
+    labelAnchor: new google.maps.Point(45, 30),
     labelClass: "map-label", // your desired CSS class
     labelInBackground: true
   });
