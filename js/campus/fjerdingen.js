@@ -103,22 +103,28 @@ function initMap() {
  };
 var place=[
 {
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.9161627, lng: 10.7591278},
+  name: 'Food Express',
+  body: 'Daglivare butikk rett ved campus Fjerdingen',
+  position: {lat: 59.916194, lng: 10.759505},
   type: 'shopping'
 },
 {
-  name: 'Oslo',
-  body: 'by',
-  position: {lat: 59.916666, lng: 10.751317},
-  type: 'shopping'
+  name: 'Harald\'s gym',
+  body: 'Velkommen til Haral\'s Gym Et av norges mest profilerte og suksessrike gym.',
+  position: {lat: 59.915808, lng: 10.758759},
+  type: 'activity'
 },
 {
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.919011, lng: 10.781915},
-  type: 'food'
+  name: 'La Maison',
+  body: 'Mediterranean, European, Greek, Vegetarian Friendly, Vegan Options, Gluten Free Options.',
+  position: {lat: 59.916638, lng: 10.756585},
+  type: 'bar'
+},
+{
+  name: 'Bed shop',
+  body: 'Spesialbutikk for senger og madrasser i Oslo sentrum.',
+  position: {lat: 59.915603, lng: 10.759315},
+  type: 'shopping'
 }];
 
 var markers = [];
