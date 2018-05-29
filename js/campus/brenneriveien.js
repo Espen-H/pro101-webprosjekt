@@ -71,7 +71,7 @@ function initMap() {
 
  var icons = {
    cafe: {
-     url: "img/bar.svg", // url
+     url: "img/cafe.png", // url
      scaledSize: new google.maps.Size(50, 50), // scaled size
      origin: new google.maps.Point(0,0), // origin
      anchor: new google.maps.Point(0, 0) // anchor
@@ -103,21 +103,87 @@ function initMap() {
  };
 var place=[
 {
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.9161627, lng: 10.7591278},
+  name: 'Brenneriet',
+  body: 'Brenneriet er en søt liten cafe i brenneriveien',
+  position: {lat: 59.919886, lng: 10.752132},
+  type: 'cafe'
+},
+{
+  name: 'BLÅ',
+  body: 'BLÅ sin historie daterer seg tilbake til åpningsdagen 28. februar 1998. Det som en gang i tiden var et gammelt oppbevaringslager for gull og diamanter i Brenneriveien 9c har gjennom årene blitt brukt til så mangt opp gjennom årene før det endte opp slik vi kjenner det i dag – en av Norges premissleverandører for norsk og internasjonal musikk på et høyt kunstnerisk nivå.',
+  position: {lat: 59.920163, lng: 10.752829},
+  type: 'bar'
+},
+{
+  name: 'Tenthaus',
+  body: 'Art gallery',
+  position: {lat: 59.920202, lng: 10.751563},
+  type: 'activity'
+},
+{
+  name: 'Café de Concert',
+  body: 'Café de Concert has become the atelier and concert gallery of the young and multitalented pianist and composer Aksel Kolstad.',
+  position: {lat: 59.919618, lng: 10.751720},
+  type: 'activity'
+},
+{
+  name: 'Naturis Kafé & Gelateria',
+  body: 'Naturis Kafé & Gelateria er en organisk og koselig cafe',
+  position: {lat: 59.919553, lng: 10.751218},
+  type: 'cafe'
+},
+{
+  name: 'Akina Sushi',
+  body: 'Søt liten asiatisk resturant',
+  position: {lat: 59.919901, lng: 10.750043},
+  type: 'food'
+},
+{
+  name: 'Frokost',
+  body: 'Frokost er en søt liten frokostcafe på løkka',
+  position: {lat: 59.920177, lng: 10.756978},
+  type: 'cafe'
+},
+{
+  name: 'Kom og Dans - Oslo',
+  body: 'Dansekurs i brenneriveien',
+  position: {lat: 59.920942, lng: 10.753400},
+  type: 'activity'
+},
+{
+  name: 'Frikar: 8',
+  body: 'Dansebutikk på utkanten av vulkan',
+  position: {lat: 59.921308, lng: 10.752805},
   type: 'shopping'
 },
 {
-  name: 'Oslo',
-  body: 'by',
-  position: {lat: 59.916666, lng: 10.751317},
+  name: 'Uno-X',
+  body: 'Bensinstasjon',
+  position: {lat: 59.921052, lng: 10.750980},
   type: 'shopping'
 },
 {
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.919011, lng: 10.781915},
+  name: 'Gorka Da',
+  body: 'Resturant med god mat',
+  position: {lat: 59.920136, lng: 10.751288},
+  type: 'food'
+},
+{
+  name: 'Bon Lio',
+  body: 'Bon Lio er en kjempefin resturant med god mat',
+  position: {lat: 59.920434, lng: 10.749064},
+  type: 'food'
+},
+{
+  name: 'SYNG',
+  body: 'SYNG er en karaoke bar hvor man kan momme hvis man har lyst til å kose seg med litt musikk og sang',
+  position: {lat: 59.919715, lng: 10.755342},
+  type: 'activity'
+},
+{
+  name: 'Britt Powers',
+  body: 'I offer catering for any event that needs some amazing and health-freak approved food.',
+  position: {lat: 59.920440, lng: 10.752665},
   type: 'food'
 }];
 
