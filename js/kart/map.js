@@ -121,3 +121,17 @@ if (mode === "transit") {
 } else if (mode === "bike") {
   $('#bikeMode').button('toggle');
 }
+
+
+let destination = gup("destination", window.location.href);
+let destinationDropDown = document.getElementById("end");
+switch(destination) {
+  case "vulkan" : destinationDropDown.value = "Vulkan 19, Oslo";
+  break;
+  case "brenneriveien" : destinationDropDown.value = "Brenneriveien 9, Oslo";
+  break;
+  case "kvadraturen" : destinationDropDown.value = "Prinsens Gate 7, Oslo";
+  break;
+  case "fjerdingen" : destinationDropDown.value = "Christian Kroghs Gate 32, Oslo";
+  break;
+}
