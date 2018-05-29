@@ -137,6 +137,66 @@ var place=[
   body: 'Spesialbutikk for senger og madrasser i Oslo sentrum.',
   position: {lat: 59.915603, lng: 10.759315},
   type: 'shopping'
+},
+{
+  name: 'Coop Prix',
+  body: 'Åpent Man-fre 06-24, Lørdag 09-24',
+  position: {lat: 59.916530, lng: 10.755906},
+  type: 'shopping'
+},
+{
+  name: 'Grytelokket',
+  body: 'Åpent Man-lør 11-03, Søndag 12-03',
+  position: {lat: 59.915532, lng: 10.755809},
+  type: 'food'
+},
+{
+  name: 'Rett inn bar',
+  body: 'Åpent Man-fre 14-0330, Lørdag og Søndag 12-0330',
+  position: {lat: 59.915113, lng: 10.754707},
+  type: 'bar'
+},
+{
+  name: 'Obento',
+  body: 'Åpent Man-fre 11-19, Lørdag 10-18',
+  position: {lat: 59.915246, lng: 10.753208},
+  type: 'shopping'
+},
+{
+  name: 'Thai Orchid',
+  body: 'Åpent Man-lør 11-21, Søndag 14-21',
+  position: {lat: 59.916332, lng: 10.754646},
+  type: 'food'
+},
+{
+  name: 'Joker Ankertorget',
+  body: 'Åpent Man-fre 08-24, Lørdag og Søndag 10-24',
+  position: {lat: 59.917607, lng: 10.755502},
+  type: 'shopping'
+},
+{
+  name: 'Pelton',
+  body: 'Åpent Man-tir 08-23, Onsdag 08-2330, Torsdag 08-24, Fredag 08-0330, Lørdag 11-0330, Søndag 12-2330',
+  position: {lat: 59.917428, lng: 10.754445},
+  type: 'bar'
+},
+{
+  name: 'Wünderburger',
+  body: 'Åpent Man-tor 11-22, Fredag 11-03, Lørdag 12-03, Søndag 13-22',
+  position: {lat: 59.917415, lng: 10.754212},
+  type: 'food'
+},
+{
+  name: 'Jødisk Museum',
+  body: 'Åpent Tirsdag 10-15, Ons-tor 14-19, Søndag 11-16',
+  position: {lat: 59.916520, lng: 10.755124},
+  type: 'activity'
+},
+{
+  name: 'Actic Gym',
+  body: 'Åpent Man-fre 05-23, Lørdag og Søndag 08-22',
+  position: {lat: 59.916124, lng: 10.757234},
+  type: 'activity'
 }];
 
 var markers = [];
