@@ -127,6 +127,24 @@ var place=[
   type: 'cafe'
 },
 {
+  name: 'Døgnvill',
+  body: 'Byens beste burgere, tjukke milkshakes og funky musikk i Oslo og Stavanger. Kjempetrivelig atmosfære og hyggelig service.',
+  position: {lat: 59.921720, lng: 10.751631},
+  type: 'food'
+},
+{
+  name: 'SiO Athletica',
+  body: 'Treningsenter for studenter',
+  position: {lat: 59.923175, lng: 10.752120},
+  type: 'activity'
+},
+{
+  name: 'Vulkan Arena',
+  body: 'Konsertlokale midt på Vulkan ved Mathallen.',
+  position: {lat: 59.922441, lng: 10.751126},
+  type: 'activity'
+},
+{
   name: 'Fyrhuset kuba',
   body: 'I det lille oransje huset i Kubaparken ligger Fyrhuset Kuba. Her kan du slukke tørsten med en av våre mange ølsorter, ta med venner på en runde poker eller et ta slag shuffle i andre etasje.',
   position: {lat: 59.923619, lng: 10.751771},
