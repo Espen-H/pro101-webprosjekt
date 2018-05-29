@@ -101,25 +101,37 @@ function initMap() {
     anchor: new google.maps.Point(0, 0) // anchor
   }
  };
-var place=[
-{
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.9161627, lng: 10.7591278},
-  type: 'shopping'
-},
-{
-  name: 'Oslo',
-  body: 'by',
-  position: {lat: 59.916666, lng: 10.751317},
-  type: 'shopping'
-},
-{
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.919011, lng: 10.781915},
-  type: 'food'
-}];
+ var place=[
+ {
+   name: 'Campus Vulkan',
+   body: '19 Vulkan, 0178',
+   position: {lat: 59.923342, lng: 10.752483},
+   type: 'campus'
+ },
+ {
+   name: 'Mathallen',
+   body: 'Vulkan 5, 0178 Oslo Åpningstider: 10-20 (11-18)',
+   position: {lat: 59.922241, lng: 10.751992},
+   type: 'shopping'
+ },
+ {
+   name: 'Rema 1000',
+   body: 'Maridalsveien 15, 0178 Oslo',
+   position: {lat: 59.923308, lng: 10.751165},
+   type: 'shopping'
+ },
+ {
+   name: 'Hendrix Ibsen',
+   body: 'Vulkan 16, 0178 Oslo',
+   position: {lat: 59.921937, lng: 10.751428},
+   type: 'bar'
+ },
+ {
+   name: 'SiO Athletica Vulkan',
+   body: 'Vulkan 15, 0178 Oslo',
+   position: {lat: 59.923166, lng: 10.752165},
+   type: 'activity'
+ }];
 
 var markers = [];
 // Create markers.
