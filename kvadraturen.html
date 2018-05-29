@@ -111,6 +111,27 @@
           <div class="collapse-nearby collapse w-75 m-auto" role="tab" id="collapseNearby" data-parent="#accordion">
               <div class="card card-body">
                   <h1 class="info-title text-center">HVA FINNER JEG I NÆROMRÅDE?</h1>
+                  <div class="filters">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="checkbox" checked id="cafeRadio" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="cafeRadio"><i class="fas fa-coffee"></i>Kafeér</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="checkbox" checked id="barRadio" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="barRadio"><i class="fas fa-glass-martini"></i>Utesteder</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="checkbox" checked id="activityRadio" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="activityRadio"><i class="fas fa-quidditch"></i>Aktiviteter</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="checkbox" checked id="shoppingRadio" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="shoppingRadio"><i class="fas fa-shopping-cart"></i>Matbutikker</label>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="checkbox" checked id="spisestederRadio" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="spisestederRadio"><i class="fa fa cutlery"></i>Spisesteder</label>
+                    </div>
+                  </div>
                   <div id="map"></div>
                 </div>
           </div>
@@ -128,22 +149,8 @@
       <h3 class="footer-text text-center"><span></span>Denne nettsideløsningen er utviklet av gruppe 32 ved Westerdals Teknologi 1.</h3>
     </section>
 
-
-    <!-- Optional JavaScript -->
-    <script>
-       var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 59.911150, lng: 10.744919},
-          zoom: 18
-        });
-      };
-
-var $myGroup = $('#myGroup');
-$myGroup.on('show.bs.collapse','.collapse', function() {
-    $myGroup.find('.collapse.in').collapse('hide');
-});
-    </script>
+    <script src="js/kart/styles.js"></script>
+    <script src="js/campus/kvadraturen.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3RzDJcXBLTXquPwSt1gJ928S5fX65sLw&callback=initMap" async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
