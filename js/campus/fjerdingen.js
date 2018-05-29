@@ -71,7 +71,7 @@ function initMap() {
 
  var icons = {
    cafe: {
-     url: "img/bar.svg", // url
+     url: "img/cafe.png", // url
      scaledSize: new google.maps.Size(50, 50), // scaled size
      origin: new google.maps.Point(0,0), // origin
      anchor: new google.maps.Point(0, 0) // anchor
@@ -119,6 +119,18 @@ var place=[
   body: 'Mediterranean, European, Greek, Vegetarian Friendly, Vegan Options, Gluten Free Options.',
   position: {lat: 59.916638, lng: 10.756585},
   type: 'bar'
+},
+{
+  name: 'Trattoria Popolare',
+  body: 'Italiensk resturant',
+  position: {lat: 59.918284, lng: 10.759887},
+  type: 'food'
+},
+{
+  name: 'Arbil',
+  body: 'En fin cafe som ligger rett ved hausmansgate',
+  position: {lat: 59.916813, lng: 10.757509},
+  type: 'cafe'
 },
 {
   name: 'Bed shop',
