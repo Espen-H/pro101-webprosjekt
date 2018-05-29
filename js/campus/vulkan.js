@@ -71,7 +71,7 @@ function initMap() {
 
  var icons = {
    cafe: {
-     url: "img/bar.svg", // url
+     url: "img/cafe.png", // url
      scaledSize: new google.maps.Size(50, 50), // scaled size
      origin: new google.maps.Point(0,0), // origin
      anchor: new google.maps.Point(0, 0) // anchor
@@ -103,22 +103,34 @@ function initMap() {
  };
 var place=[
 {
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.9161627, lng: 10.7591278},
+  name: 'Rema 1000',
+  body: 'Rema 1000, stilisert som REMA 1000 er en norsk franchisekjede med dagligvareforretninger som inngår i Reitangruppen.',
+  position: {lat: 59.923296, lng: 10.751220},
   type: 'shopping'
 },
 {
-  name: 'Oslo',
-  body: 'by',
-  position: {lat: 59.916666, lng: 10.751317},
-  type: 'shopping'
-},
-{
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.919011, lng: 10.781915},
+  name: 'Mathallen',
+  body: 'Mathallen er en arena for unike smaksopplevelser med det beste av norsk og internasjonal mat, mennesker og atmosfære, og et samlingspunkt for mattrender.',
+  position: {lat: 59.922350, lng: 10.752042},
   type: 'food'
+},
+{
+  name: 'Vulkan klatresenter',
+  body: 'Vulkan Klatresenter drevet av kolsås Klatreklubb. Klatring for Barn, unge og voksne. Treningsgrupper for barn og ungdom. Vi har brattkortkurs.',
+  position: {lat: 59.922946, lng: 10.751951},
+  type: 'activity'
+},
+{
+  name: 'Hendrix Ibsen',
+  body: 'We are not all about coffee, we care about offering quality products within food, music and art as well. With ongoing exhibition and a used records shop we make for an exciting destination!vWelcome everyone!',
+  position: {lat: 59.921947, lng: 10.751364},
+  type: 'cafe'
+},
+{
+  name: 'Fyrhuset kuba',
+  body: 'I det lille oransje huset i Kubaparken ligger Fyrhuset Kuba. Her kan du slukke tørsten med en av våre mange ølsorter, ta med venner på en runde poker eller et ta slag shuffle i andre etasje.',
+  position: {lat: 59.923619, lng: 10.751771},
+  type: 'bar'
 }];
 
 var markers = [];
