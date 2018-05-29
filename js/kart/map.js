@@ -92,15 +92,19 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   });
 }
 
+
 function getTravelMode() {
   let radioWalk = document.getElementById("radioWalk");
   let radioBike = document.getElementById("radioBike");
   let RadioTransit = document.getElementById("RadioTransit");
   if (radioWalk.checked) {
+    toggleBike(false);
     return "WALKING";
   } else if (radioBike.checked) {
+    toggleBike(true);
     return "WALKING";
   } else {
+    toggleBike(false);
     return "TRANSIT";
   }
 }
@@ -121,6 +125,52 @@ if (mode === "transit") {
 } else if (mode === "bike") {
   $('#bikeMode').button('toggle');
 }
+
+
+var bikeIcon = {
+  url: 'img/bike.png',
+  scaledSize: new google.maps.Size(40, 40),
+  origin: new google.maps.Point(0, 0),
+  anchor: new google.maps.Point(32, 65)
+};
+var bikeStationMarkers = [];
+$.getJSON('http://tek.westerdals.no/~midand17/bike.php', function(bike) {
+  $.getJSON('http://tek.westerdals.no/~midand17/available.php', function(available) {
+    bike.stations.forEach(function(station) {
+      var label = (available.stations.find(x => x.id === station.id).availability.bikes).toString();
+      var marker = new google.maps.Marker({
+            position: {
+              lat: station.center.latitude,
+              lng: station.center.longitude
+            },
+            icon: bikeIcon,
+            label: {
+              text: label,
+              color: 'white',
+            },
+            map: map
+      });
+      if (mode !== "bike") {
+        marker.setVisible(false);
+      }
+      bikeStationMarkers.push(marker);
+    });
+  });
+});
+
+function toggleBike(bool) {
+  bikeStationMarkers.forEach(function(marker) {
+    marker.setVisible(bool);
+  })
+}
+
+$('input[type="radio"]').on('click change', function(e) {
+    if(radioBike.checked) {
+      toggleBike(true);
+    } else {
+      toggleBike(false);
+    }
+});
 
 
 let destination = gup("destination", window.location.href);
