@@ -71,7 +71,7 @@ function initMap() {
 
  var icons = {
    cafe: {
-     url: "img/bar.svg", // url
+     url: "img/cafe.png", // url
      scaledSize: new google.maps.Size(50, 50), // scaled size
      origin: new google.maps.Point(0,0), // origin
      anchor: new google.maps.Point(0, 0) // anchor
@@ -103,22 +103,130 @@ function initMap() {
  };
 var place=[
 {
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.9161627, lng: 10.7591278},
+  name: 'Outland',
+  body: 'Åpent Man-fre 09-20, Lørdag 09-19, Søndag 12-18',
+  position: {lat: 59.911664, lng: 10.744789},
   type: 'shopping'
 },
 {
-  name: 'Oslo',
-  body: 'by',
-  position: {lat: 59.916666, lng: 10.751317},
-  type: 'shopping'
-},
-{
-  name: 'Espresso House',
-  body: 'Test',
-  position: {lat: 59.919011, lng: 10.781915},
+  name: 'Subway',
+  body: 'Åpent Man-fre 09-20, Lørdag 10-20, Søndag 11-19',
+  position: {lat: 59.911605, lng: 10.745213},
   type: 'food'
+},
+{
+  name: 'Prince Lunchbar',
+  body: 'Åpent Man-fre 0630-1900, Lørdag 08-18, Søndag Stengt ',
+  position: {lat: 59.910958, lng: 10.744647},
+  type: 'food'
+},
+{
+name: 'Kvadrat Salat',
+body: 'Åpent Man-fre 10-18, stengt lørdag og søndag',
+position: {lat:59.911298, lng:  10.743468},
+type: 'cafe'
+},
+{
+name: 'MAMMA Pizza',
+body: 'Åpent Man-fre 11-2130, Lør-søn 12-2130',
+position: {lat:59.910778, lng: 10.746774},
+type: 'food'
+},
+{
+name: 'The Escape Games Oslo',
+body: 'Åpent 10-23 hele uken',
+position: {lat:59.910092, lng: 10.747324},
+type: 'activity'
+},
+{
+name: 'MAX',
+body: 'Åpent Man-ons 10-01, Tor-lør 10-0330, Søndag 11-01',
+position: {lat:59.912725, lng: 10.741820},
+type: 'food'
+},
+{
+name: 'The Scotsman',
+body: 'Åpent Mandag 11-01, Tir-fre 11-03, Lørdag 11-01 , Søndag 12-01',
+position: {lat:59.912613, lng: 10.743608},
+type: 'bar'
+},
+{
+name: 'Steen & Strøm Department Store',
+body: 'Åpent Man-ons og fredag 10-19, Torsdag 10-20,Lørdag 10-18, Stengt Søndag.  ',
+position: {lat:59.911984, lng: 10.743018},
+type: 'shopping'
+},
+{
+name: 'Lotus Shi\'s sushi Bar',
+body: 'Åpent hele uken 14-23',
+position: {lat:59.910238, lng: 10.745331},
+type: 'food'
+},
+{
+name: 'Cinemateket',
+body: 'Åpent Ma10.00-16.00, Ti-fr10.00-21.00, Lø12.00-17.00, Sø13.00-21.00',
+position: {lat:59.909622, lng: 10.745724},
+type: 'activity'
+},
+{
+name: 'The Dubliner Oslo',
+body: 'Åpent Søn-man 12-01, Tir-lør 12-03',
+position: {lat:59.909884, lng: 10.740600},
+type: 'bar'
+},
+{
+name: 'Joker',
+body: 'Åpent Man-tor 7-24, Fredag 07-04, Lørdag 09-04, Søndag 09-24',
+position: {lat:59.910962, lng: 10.741609},
+type: 'shopping'
+},
+{
+name: 'The Minibottle Gallery',
+body: 'Åpent Lørdag og Søndag 12-16',
+position: {lat:59.909665, lng: 10.743360},
+type: 'activity'
+},
+{
+name: 'A.C. Perch\'s',
+body: 'Åpent Man-tor 09-1730, Fredag 09-18, Lørdag 09-17',
+position: {lat:59.909358, lng: 10.742673},
+type: 'cafe'
+},
+{
+name: 'Kaffebrenneriet',
+body: 'Åpent Man-fre 07-20, Lørdag 08-18',
+position: {lat:59.911701, lng: 10.747726},
+type: 'cafe'
+},
+{
+name: 'Neo Tokyo',
+body: 'Åpent Man-fre 10-20, Lørdag 10-18',
+position: {lat:59.911701, lng: 10.747726},
+type: 'shopping'
+},
+{
+name: 'Ensemble Allegria',
+body: 'Orkerster http://www.ensembleallegria.com/',
+position: {lat:59.910504, lng:  10.747817},
+type: 'activity'
+},
+{
+name: 'Peppes Pizza',
+body: 'Åpent Man-Lør 11-2330, Søndag 13-2030',
+position: {lat:59.911358, lng: 10.749497},
+type: 'food'
+},
+{
+name: 'Pastel da Nata',
+body: 'Åpent Man-fre 11-1830, Lørdag og Søndag 11-1630',
+position: {lat:59.910441, lng: 10.742294},
+type: 'food'
+},
+{
+name: 'Hvelvet studentpub',
+body: 'Åpent Torsdag 18-03',
+position: {lat:59.911208, lng: 10.744851},
+type: 'bar'
 }];
 
 var markers = [];
