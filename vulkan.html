@@ -116,6 +116,10 @@
                   <label class="custom-control-label" for="cafeRadio"><i class="fas fa-coffee"></i>Kafeér</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline">
+                  <input type="checkbox" checked id="foodRadio" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="foodRadio"><i class="fas fa-utensils"></i>Spisesteder</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
                   <input type="checkbox" checked id="barRadio" name="customRadioInline1" class="custom-control-input">
                   <label class="custom-control-label" for="barRadio"><i class="fas fa-glass-martini"></i>Utesteder</label>
                 </div>
@@ -144,11 +148,12 @@
       <h3 class="footer-text text-center"><span></span>Denne nettsideløsningen er utviklet av gruppe X ved Westerdals Teknologi 1.</h3>
     </section>
     <script src="js/kart/styles.js"></script>
-    <script src="js/campus/vulkan.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3RzDJcXBLTXquPwSt1gJ928S5fX65sLw&callback=initMap" async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3RzDJcXBLTXquPwSt1gJ928S5fX65sLw"></script>
+    <script src="http://cdn.sobekrepository.org/includes/gmaps-markerwithlabel/1.9.1/gmaps-markerwithlabel-1.9.1.min.js"></script>
+    <script src="js/campus/vulkan.js"></script>
   </body>
 </html>
