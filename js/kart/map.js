@@ -79,17 +79,19 @@ function initMap() {
 }
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-  directionsService.route({
-    origin: document.getElementById('start').value,
-    destination: document.getElementById('end').value,
-    travelMode: getTravelMode()
-  }, function(response, status) {
-    if (status === 'OK') {
-      directionsDisplay.setDirections(response);
-    } else {
-      window.alert('Directions request failed due to ' + status);
-    }
-  });
+  if (document.getElementById("start").value !== document.getElementById("end").value) {
+    directionsService.route({
+      origin: document.getElementById('start').value,
+      destination: document.getElementById('end').value,
+      travelMode: getTravelMode()
+    }, function(response, status) {
+      if (status === 'OK') {
+        directionsDisplay.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+  }
 }
 
 if (navigator.geolocation) {
