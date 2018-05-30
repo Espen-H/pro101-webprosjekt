@@ -1,0 +1,11 @@
+.map-label {
+  border: 1px solid #5972ff;
+  border-radius: 5px;
+  background: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px;
+  color: #5972ff;
+}

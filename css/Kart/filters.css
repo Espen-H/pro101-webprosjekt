@@ -13,7 +13,7 @@
   .map-body .filters {
     display: flex;
   }
-  .map-body .filters .d-flex .form-control {
+  .map-body .filters .d-flex .input-group {
     margin: 0 5px;
   }
 }

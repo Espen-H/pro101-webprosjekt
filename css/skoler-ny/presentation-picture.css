@@ -74,7 +74,7 @@
 }
 
 .presentation-picture-kvadraturen{
-    background-image: url(../../img/brenneriveienBlack.png);
+    background-image: url(../../img/kvadraturenBlack.png);
     padding:0;
     margin: 0;
     background-size:cover;
@@ -97,4 +97,3 @@
 .presentation-picture-kvadraturen .description-label{
     padding-bottom:10px;
 }
-
