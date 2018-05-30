@@ -86,11 +86,14 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   }, function(response, status) {
     if (status === 'OK') {
       directionsDisplay.setDirections(response);
+      console.log(response);
+      document.getElementById('time-estimate').innerHTML = 'Estimert tid: ' + directionsDisplay.directions.routes[0].legs[0].duration.text;
     } else {
       window.alert('Directions request failed due to ' + status);
     }
   });
 }
+
 
 
 function getTravelMode() {
@@ -129,6 +132,12 @@ if (mode === "transit") {
 
 var bikeIcon = {
   url: 'img/bike.png',
+  scaledSize: new google.maps.Size(40, 40),
+  origin: new google.maps.Point(0, 0),
+  anchor: new google.maps.Point(32, 65)
+};
+var myPosIcon = {
+  url: 'img/my-pos.png',
   scaledSize: new google.maps.Size(40, 40),
   origin: new google.maps.Point(0, 0),
   anchor: new google.maps.Point(32, 65)
