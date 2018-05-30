@@ -105,7 +105,7 @@ function getTravelMode() {
     return "WALKING";
   } else if (radioBike.checked) {
     toggleBike(true);
-    return "WALKING";
+    return "BICYCLING";
   } else {
     toggleBike(false);
     return "TRANSIT";
