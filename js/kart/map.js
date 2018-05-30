@@ -92,6 +92,33 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   });
 }
 
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+function showPosition(position) {
+  var lat = position.coords.latitude;
+  var lng = position.coords.longitude;
+  $('#start').append($('<option>', {
+  value: lat + "," + lng,
+  text: 'Min posisjon',
+  style: 'background-color: #17a2b8; color: white'
+  }));
+  var marker = new google.maps.Marker({
+        position: {
+          lat: lat,
+          lng: lng
+        },
+        icon: bikeIcon,
+        label: {
+          text: 'DIN POSISJON',
+          color: 'red',
+        },
+        map: map
+  });
+}
+
 
 function getTravelMode() {
   let radioWalk = document.getElementById("radioWalk");
