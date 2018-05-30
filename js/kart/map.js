@@ -86,11 +86,14 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   }, function(response, status) {
     if (status === 'OK') {
       directionsDisplay.setDirections(response);
+      console.log(response);
+      document.getElementById('time-estimate').innerHTML = 'Estimert tid: ' + directionsDisplay.directions.routes[0].legs[0].duration.text;
     } else {
       window.alert('Directions request failed due to ' + status);
     }
   });
 }
+
 
 
 function getTravelMode() {
