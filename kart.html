@@ -54,7 +54,32 @@
         </nav>
 <div class="filters">
   <div class="d-flex">
-    <div class="input-group">
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Fra</label>
+          </div>
+          <select class="custom-select" id="start">
+              <option value="Christian Kroghs Gate 32, Oslo">Fjerdingen</option>
+              <option value="Vulkan 19, Oslo">Vulkan</option>
+              <option value="Brenneriveien 9, Oslo">Brenneriveien</option>
+              <option value="Prinsens Gate 7, Oslo">Kvadraturen</option>
+          </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="end">Til</label>
+            </div>
+            <select class="custom-select" id="end">
+                <option value="Christian Kroghs Gate 32, Oslo">Fjerdingen</option>
+                <option value="Vulkan 19, Oslo">Vulkan</option>
+                <option value="Brenneriveien 9, Oslo">Brenneriveien</option>
+                <option value="Prinsens Gate 7, Oslo">Kvadraturen</option>
+            </select>
+          </div>
+        
+    <!--
+          <div class="input-group">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1">Fra</span>
       </div>
@@ -76,9 +101,22 @@
           <option value="Prinsens Gate 7, Oslo">Kvadraturen</option>
         </select>
     </div>
+    -->
   </div>
   <div>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <div class="btn-group btn-group-toggle mb-3 ml-4" data-toggle="buttons">
+          <label id="walkMode" class="btn btn-secondary active">
+            <input type="radio" name="options" id="radioWalk" autocomplete="off" checked> Gå
+          </label>
+          <label id="transitMode" class="btn btn-secondary">
+            <input type="radio" name="options" id="radioTransit" autocomplete="off"> Kollektivt
+          </label>
+          <label id="bikeMode" class="btn btn-secondary">
+            <input type="radio" name="options" id="radioBike" autocomplete="off"> Sykle
+          </label>
+        </div>
+    <!-- 
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label id="walkMode" class="btn btn-secondary active">
               <input type="radio" name="options" id="radioWalk" autocomplete="off" checked> Gå
             </label>
@@ -89,8 +127,10 @@
               <input type="radio" name="options" id="radioBike" autocomplete="off"> Sykle
             </label>
     </div>
-    <button type="button" onclick="calculateAndDisplayRoute(directionsService, directionsDisplay)" class="btn btn-success ml-3 nav-btn">Naviger</button>
-    <p id="time-estimate" class="d-inline text-white pl-3"></p>
+     -->
+    
+    <button type="button" onclick="calculateAndDisplayRoute(directionsService, directionsDisplay)" class="btn btn-danger mb-3 ml-4 nav-btn">Naviger</button>
+    <p id="time-estimate" class="d-inline-block text-white pl-3 pt-3"></p>
   </div>
 </div>
     <div id="map" style="height: calc(100vh - 181px)"></div>

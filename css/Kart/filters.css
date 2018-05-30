@@ -1,11 +1,19 @@
 .map-body .filters {
-  padding: 10px;
-  background: #18181a;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #ffffff;
+  padding-bottom:20px;
+  padding-top:25px;
 }
-
+/*
 .map-body .filters .btn-group .active {
   background-color: #17a2b8;
+}*/
+
+.map-body .filters .input-group-text{
+  max-height:38px;
 }
+
 .map-body .filters .form-control {
   max-width: 300px;
 }
@@ -20,5 +28,11 @@
 @media screen and (max-width: 630px) {
   .nav-btn {
     float: right;
+  }
+
+  .map-body .filters #time-estimate{
+    display:block !important;
+    margin-top:20px !important;
+    text-align:center !important;
   }
 }
