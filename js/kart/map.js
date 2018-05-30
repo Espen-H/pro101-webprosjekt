@@ -18,7 +18,9 @@ var vulkanLoc = {
 
 function initMap() {
   directionsService = new google.maps.DirectionsService;
-  directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true});
+  directionsDisplay = new google.maps.DirectionsRenderer({
+    suppressMarkers: true
+  });
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
       lat: 59.917933,
@@ -95,7 +97,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 }
 
 
-if(navigator.geolocation) {
+if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showPosition);
 } else {
   console.log("Geolocation not supported by browser :))");
@@ -104,23 +106,23 @@ if(navigator.geolocation) {
 function showPosition(position) {
   var lat = position.coords.latitude;
   var lng = position.coords.longitude;
-   $('#start').append($('<option>', {
-     value: lat + "," + lng,
-     text: 'Min posisjon',
-     style: 'background-color: #17a2b8; color: white'
+  $('#start').append($('<option>', {
+    value: lat + "," + lng,
+    text: 'Min posisjon',
+    style: 'background-color: #17a2b8; color: white'
   }));
   var marker = new google.maps.Marker({
     position: {
       lat: lat,
       lng: lng
-      },
-      icon: bikeIcon,
-      label: {
-        text: 'DIN POSISJON',
-        color: 'red',
-        },
-      map: map
-      });
+    },
+    icon: bikeIcon,
+    label: {
+      text: 'DIN POSISJON',
+      color: 'red',
+    },
+    map: map
+  });
 }
 
 
@@ -176,16 +178,16 @@ $.getJSON('http://tek.westerdals.no/~midand17/bike.php', function(bike) {
     bike.stations.forEach(function(station) {
       var label = (available.stations.find(x => x.id === station.id).availability.bikes).toString();
       var marker = new google.maps.Marker({
-            position: {
-              lat: station.center.latitude,
-              lng: station.center.longitude
-            },
-            icon: bikeIcon,
-            label: {
-              text: label,
-              color: 'white',
-            },
-            map: map
+        position: {
+          lat: station.center.latitude,
+          lng: station.center.longitude
+        },
+        icon: bikeIcon,
+        label: {
+          text: label,
+          color: 'white',
+        },
+        map: map
       });
       if (mode !== "bike") {
         marker.setVisible(false);
@@ -202,23 +204,27 @@ function toggleBike(bool) {
 }
 
 $('input[type="radio"]').on('click change', function(e) {
-    if(radioBike.checked) {
-      toggleBike(true);
-    } else {
-      toggleBike(false);
-    }
+  if (radioBike.checked) {
+    toggleBike(true);
+  } else {
+    toggleBike(false);
+  }
 });
 
 
 let destination = gup("destination", window.location.href);
 let destinationDropDown = document.getElementById("end");
-switch(destination) {
-  case "vulkan" : destinationDropDown.value = "Vulkan 19, Oslo";
-  break;
-  case "brenneriveien" : destinationDropDown.value = "Brenneriveien 9, Oslo";
-  break;
-  case "kvadraturen" : destinationDropDown.value = "Prinsens Gate 7, Oslo";
-  break;
-  case "fjerdingen" : destinationDropDown.value = "Christian Kroghs Gate 32, Oslo";
-  break;
+switch (destination) {
+  case "vulkan":
+    destinationDropDown.value = "Vulkan 19, Oslo";
+    break;
+  case "brenneriveien":
+    destinationDropDown.value = "Brenneriveien 9, Oslo";
+    break;
+  case "kvadraturen":
+    destinationDropDown.value = "Prinsens Gate 7, Oslo";
+    break;
+  case "fjerdingen":
+    destinationDropDown.value = "Christian Kroghs Gate 32, Oslo";
+    break;
 }
