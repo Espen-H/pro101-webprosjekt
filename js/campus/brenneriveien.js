@@ -71,31 +71,31 @@ function initMap() {
 
  var icons = {
    cafe: {
-     url: "img/cafe.png", // url
+     url: "img/icons/cafe.png", // url
      scaledSize: new google.maps.Size(50, 50), // scaled size
      origin: new google.maps.Point(0,0), // origin
      anchor: new google.maps.Point(0, 0) // anchor
    },
    bar: {
-    url: "img/bar.png", // url
+    url: "img/icons/bar.png", // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
   },
   shopping: {
-    url: "img/shopping.png", // url
+    url: "img/icons/shopping.png", // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
   },
   activity: {
-    url: "img/activity.png", // url
+    url: "img/icons/activity.png", // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
   },
   food: {
-    url: "img/food.png", // url
+    url: "img/icons/food.png", // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
