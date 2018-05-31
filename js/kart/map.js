@@ -173,8 +173,8 @@ var myPosIcon = {
   anchor: new google.maps.Point(32, 65)
 };
 var bikeStationMarkers = [];
-$.getJSON('http://tek.westerdals.no/~midand17/bike.php', function(bike) {
-  $.getJSON('http://tek.westerdals.no/~midand17/available.php', function(available) {
+$.getJSON('https://tek.westerdals.no/~midand17/bike.php', function(bike) {
+  $.getJSON('https://tek.westerdals.no/~midand17/available.php', function(available) {
     bike.stations.forEach(function(station) {
       var label = (available.stations.find(x => x.id === station.id).availability.bikes).toString();
       var marker = new google.maps.Marker({
