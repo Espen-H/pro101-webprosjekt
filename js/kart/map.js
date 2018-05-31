@@ -116,7 +116,7 @@ function showPosition(position) {
       lat: lat,
       lng: lng
     },
-    icon: bikeIcon,
+    icon: myPosIcon,
     label: {
       text: 'DIN POSISJON',
       color: 'red',
@@ -169,7 +169,7 @@ var bikeIcon = {
   anchor: new google.maps.Point(32, 65)
 };
 var myPosIcon = {
-  url: 'img/my-pos.png',
+  url: 'img/icons/my-pos.png',
   scaledSize: new google.maps.Size(40, 40),
   origin: new google.maps.Point(0, 0),
   anchor: new google.maps.Point(32, 65)
