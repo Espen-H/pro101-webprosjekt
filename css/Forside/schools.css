@@ -30,6 +30,12 @@ a:hover {
     margin-top:0px;
 }
 
+.information-section .mobile-menu{
+    margin: 0 auto;
+    display:block;
+    max-width:270px;
+}
+
 .campus-section .container .row .school-box-fjerdingen .school-title{
     font-family: 'SanFranciscoCompactSemiBold';
     font-size:28px;

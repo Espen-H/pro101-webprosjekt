@@ -41,6 +41,38 @@
     font-size:18px;
 }
 
+/*--------------------------------------*/
+
+.information-section .mobile-menu .btn{
+    background-color:rgb(240, 240, 240) !important;
+    color:rgb(141, 141, 141);
+    font-size:18px;
+    text-transform: uppercase;
+    /*border-color:rgb(207, 207, 207) !important;*/
+    border:none;
+}
+
+.information-section .mobile-menu .btn.active{
+    color:rgb(75, 75, 75) !important;
+}
+
+.information-section .mobile-menu .btn.active:focus{
+    color:rgb(75, 75, 75) !important;
+}
+
+.information-section .mobile-menu .btn.active:hover{
+    color:rgb(75, 75, 75) !important;
+}
+
+.information-section .mobile-menu .btn.active:active{
+    color:rgb(75, 75, 75) !important;
+}
+
+.information-section .mobile-menu button>.content{
+    padding:10px !important;
+    font-size:18px;
+}
+
 .information-section .display-container{
     margin-top:50px !important;
     padding-bottom:60px !important;
