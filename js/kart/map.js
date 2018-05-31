@@ -18,9 +18,7 @@ var vulkanLoc = {
 
 function initMap() {
   directionsService = new google.maps.DirectionsService;
-  directionsDisplay = new google.maps.DirectionsRenderer({
-    suppressMarkers: true
-  });
+  directionsDisplay = new google.maps.DirectionsRenderer();
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
       lat: 59.917933,
@@ -81,19 +79,21 @@ function initMap() {
 }
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-  directionsService.route({
-    origin: document.getElementById('start').value,
-    destination: document.getElementById('end').value,
-    travelMode: getTravelMode()
-  }, function(response, status) {
-    if (status === 'OK') {
-      directionsDisplay.setDirections(response);
-      console.log(response);
-      document.getElementById('time-estimate').innerHTML = '<i class="far fa-clock"></i>  Estimert tid: ' + directionsDisplay.directions.routes[0].legs[0].duration.text;
-    } else {
-      window.alert('Directions request failed due to ' + status);
-    }
-  });
+  if (document.getElementById('start').value !== document.getElementById('end').value) {
+    directionsService.route({
+      origin: document.getElementById('start').value,
+      destination: document.getElementById('end').value,
+      travelMode: getTravelMode()
+    }, function(response, status) {
+      if (status === 'OK') {
+        directionsDisplay.setDirections(response);
+        console.log(response);
+        document.getElementById('time-estimate').innerHTML = '<i class="far fa-clock"></i>  Estimert tid: ' + directionsDisplay.directions.routes[0].legs[0].duration.text;
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
+  }
 }
 
 
