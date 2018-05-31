@@ -78,4 +78,7 @@
   .desktop-header {
     display: none !important;
   }
+  .hiddenMobile {
+    display: none !important;
+  }
 }

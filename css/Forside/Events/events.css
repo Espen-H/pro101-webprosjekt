@@ -13,3 +13,8 @@
    padding-right:20px !important;
    margin-top:30px !important;
 }
+
+.event-section {
+  overflow: hidden;
+  max-width: 100%;
+}
