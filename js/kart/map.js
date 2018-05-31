@@ -157,6 +157,8 @@ if (mode === "transit") {
   $('#transitMode').button('toggle');
 } else if (mode === "bike") {
   $('#bikeMode').button('toggle');
+} else if(mode ===  "walk") {
+  $('#walkMode').button('toggle');
 }
 
 
