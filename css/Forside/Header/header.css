@@ -4,7 +4,7 @@
     padding:0;
     margin: 0;
     background-size:cover;
-    height:400px;
+    padding-bottom: 10px;
     margin-top:0px;
 }
 
@@ -56,7 +56,26 @@
     background-color:white;
     color:black;
     cursor: pointer;
-
 }
 
+.mobile-header button {
+  margin: 10px 0px;
+  width: 100% !important;
+}
 
+@media screen and (min-width: 630px) {
+  .mobile-header {
+    display: none;
+  }
+  .desktop-header {
+    display: block;
+  }
+}
+@media screen and (max-width: 630px) {
+  .mobile-header {
+    display: block;
+  }
+  .desktop-header {
+    display: none !important;
+  }
+}
